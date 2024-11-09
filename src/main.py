@@ -22,8 +22,8 @@ optimizer = optim.Adam(model.parameters(), lr=0.001)
 
 # Training function
 def train_model(model, train_loader, criterion, optimizer, epochs=50):
-    model.train()
     for epoch in range(epochs):
+        model.train()  # Set the model to training mode
         running_loss = 0.0
         for batch_x, batch_y in train_loader:
             batch_x, batch_y = batch_x.to(device), batch_y.to(device)
@@ -47,7 +47,7 @@ def train_model(model, train_loader, criterion, optimizer, epochs=50):
 
 # Evaluation function
 def evaluate_model(model, test_loader, criterion):
-    model.eval()
+    model.eval()  # Set the model to evaluation mode
     test_loss = 0.0
     with torch.no_grad():
         for batch_x, batch_y in test_loader:
@@ -64,7 +64,7 @@ train_model(model, train_loader, criterion, optimizer, epochs=50)
 
 # Prediction function for a new sequence (e.g., last known sequence in test data)
 def predict(model, input_sequence, scaler):
-    model.eval()
+    model.eval()  # Set the model to evaluation mode for prediction
     with torch.no_grad():
         input_sequence = input_sequence.unsqueeze(0).to(device)
         prediction = model(input_sequence)
