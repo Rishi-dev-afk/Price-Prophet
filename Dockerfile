@@ -17,4 +17,4 @@ COPY . /app/
 EXPOSE 8501
 
 # Command to run your app using Streamlit
-CMD ["streamlit", "run", "stock_predictor.py"]
+CMD ["streamlit", "run", "main.py"]
