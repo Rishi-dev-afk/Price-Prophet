@@ -26,31 +26,7 @@ def create_sequences(data, seq_length=30):
 
 # Example usage
 data = load_and_clean_data("AAPL", "2022-01-01", "2023-01-01")  
-
 normalized_data, scaler = normalize_data(data)  
-
-plt.figure(figsize=(10, 6))
-plt.plot(data['Close'], label='AAPL Close Price', color='blue')
-plt.title('AAPL Stock Price (2022-2023)')
-plt.xlabel('Date')
-plt.ylabel('Price (USD)')
-plt.legend(loc='upper left')
-plt.xticks(rotation=45)
-plt.grid(True)
-plt.tight_layout()
-plt.show()
-
-plt.figure(figsize=(10, 6))
-plt.plot(normalized_data, label='Normalized AAPL Close Price', color='green')
-plt.title('Normalized AAPL Stock Price (2022-2023)')
-plt.xlabel('Date')
-plt.ylabel('Normalized Price')
-plt.legend(loc='upper left')
-plt.xticks(rotation=45)
-plt.grid(True)
-plt.tight_layout()
-plt.show()
-
 x, y = create_sequences(normalized_data)
 
 train_size = int(len(x) * 0.8)
