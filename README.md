@@ -13,8 +13,8 @@ Features:
 -User-friendly insights: Accessible, actionable predictions for smarter investment decisions.
 
 Tech Stack:
-Programming Language: Python
-Machine Learning Framework: PyTorch
-Data Processing: Pandas, Numpy
-Data Source: Yahoo Finance API
-Visualization: Matplotlib, Seaborn
+Programming Language: Python,
+Machine Learning Framework: PyTorch,
+Data Processing: Pandas, Numpy,
+Data Source: Yahoo Finance API,
+Visualization: Matplotlib, Seaborn,
