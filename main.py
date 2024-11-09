@@ -299,7 +299,7 @@ def plot_predictions(predictions, actuals, stock_symbols):
     st.pyplot(plt)
 
 if __name__ == "__main__":
-    st.run(port=8080)
     app()
+     
 
 
