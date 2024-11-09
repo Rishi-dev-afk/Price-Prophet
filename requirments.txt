@@ -1,5 +1,7 @@
+streamlit
 torch
 pandas
 numpy
 matplotlib
 yfinance
+scikit-learn
