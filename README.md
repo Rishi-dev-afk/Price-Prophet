@@ -1,6 +1,5 @@
 # Price-Prophet
 
-Project Description:
 Price Prophet is an AI model that leverages LSTM neural networks to forecast future stock prices based on historical data. By analyzing past market trends, this model aims to assist traders and investors in making informed, data-driven decisions.
 
 Problem Statement:
