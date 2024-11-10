@@ -1,6 +1,7 @@
 This project utilizes deep learning techniques, specifically Long Short-Term Memory (LSTM) networks, to predict stock prices for multiple companies based on historical data. Stock price prediction is a critical task in the financial sector, and LSTM models are well-suited for such time-series forecasting due to their ability to retain and learn from long-term dependencies in sequential data.
 
 Key Components:
+
 Data Collection and Preprocessing:
 
 The project pulls historical stock data for multiple companies (such as AAPL, MSFT, GOOGL) using the Yahoo Finance API (yfinance).
